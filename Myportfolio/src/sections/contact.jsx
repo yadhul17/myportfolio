@@ -22,9 +22,9 @@ export default function Contact() {
         e.preventDefault();
         setIsSubmitting(true);
 
-        const serviceID = "service_cnes71f";
-        const templateID = "template_ewcf2ak";
-        const publicKey = "vJyskzMGBidgL3mLh";
+        const serviceID = "";
+        const templateID = "";
+        const publicKey = "";
 
         emailjs.send(serviceID, templateID, formData, publicKey)
             .then(() => {
