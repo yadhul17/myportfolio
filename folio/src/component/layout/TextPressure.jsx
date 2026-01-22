@@ -1,5 +1,3 @@
-// Component ported from https://codepen.io/JuanFuentes/full/rgXKGQ
-
 import { useEffect, useRef, useState, useMemo, useCallback } from 'react';
 
 const dist = (a, b) => {
