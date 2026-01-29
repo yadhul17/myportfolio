@@ -22,15 +22,9 @@ export default function Contact() {
         e.preventDefault();
         setIsSubmitting(true);
 
-<<<<<<< HEAD
         const serviceID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
         const templateID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
         const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
-=======
-        const serviceID = "";
-        const templateID = "";
-        const publicKey = "";
->>>>>>> 3b2a3b09dd3ed6a18c72f6d0af52edad30d7a99b
 
         emailjs.send(serviceID, templateID, formData, publicKey)
             .then(() => {
