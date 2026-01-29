@@ -1,6 +1,6 @@
-import { useState } from "react"
+import React, { useState } from "react"
 import Section from "../component/common/sectioin";
-import Container from "../component/common/Container";
+import Container from "../component/common/container";
 import emailjs from "@emailjs/browser";
 import { Send, Loader2 } from "lucide-react"
 
@@ -22,9 +22,9 @@ export default function Contact() {
         e.preventDefault();
         setIsSubmitting(true);
 
-        const serviceID = "service_cnes71f";
-        const templateID = "template_ewcf2ak";
-        const publicKey = "vJyskzMGBidgL3mLh";
+        const serviceID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+        const templateID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+        const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
 
         emailjs.send(serviceID, templateID, formData, publicKey)
             .then(() => {
@@ -41,8 +41,8 @@ export default function Contact() {
     return (
         <Section id="contact" className="relative bg-black py-24 overflow-hidden">
             {/* Background Glows to match Hero */}
-            <div className="absolute top-1/2 left-1/4 w-96 h-96 bg-purple-600/20 blur-[120px] rounded-full -z-10" />
-            <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-cyan-600/10 blur-[120px] rounded-full -z-10" />
+            
+            
 
             <Container>
                 <div className="text-center mb-16">
@@ -56,9 +56,9 @@ export default function Contact() {
 
                 <div className="max-w-3xl mx-auto">
                     {/* Form Container with Glassmorphism */}
-                    <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-3xl p-8 md:p-12 shadow-2xl">
+                    <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-3xl p-5 sm:p-8 md:p-12 shadow-2xl">
                         <form onSubmit={handleSubmit} className="space-y-6">
-                            
+
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                 <div className="space-y-2">
                                     <label className="text-sm text-gray-400 ml-1">Your Name</label>

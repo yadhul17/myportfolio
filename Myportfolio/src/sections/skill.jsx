@@ -49,11 +49,11 @@ const Skills = () => {
       className="relative py-28 overflow-hidden text-gray-200"
     >
       {/* Mouse-follow glow */}
-      
+
 
       <div className="relative max-w-7xl mx-auto px-6">
         {/* Animated Heading */}
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -66,19 +66,19 @@ const Skills = () => {
         </motion.div>
 
         {/* Skills Grid with Staggered Animation */}
-        <motion.div 
+        <motion.div
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
-          className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-4 gap-8"
+          className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-4 gap-8"
         >
           {skills.map(({ name, icon: Icon, color }) => (
             <motion.div
               key={name}
               variants={itemVariants}
-              whileHover={{ 
-                scale: 1.05, 
+              whileHover={{
+                scale: 1.05,
                 backgroundColor: "rgba(255, 255, 255, 0.08)",
                 borderColor: "rgba(56, 189, 248, 0.4)"
               }}

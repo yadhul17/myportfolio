@@ -21,11 +21,11 @@ const Hero = () => {
             I'm Yadhul Jayakumar
           </h1>
 
-          <div className="flex justify-center mb-8 w-full px-4">
-            <div className="w-full max-w-[280px] sm:max-w-xs md:max-w-sm flex justify-center items-center mx-auto">
+          <div className="flex justify-center mb-8 w-full px-2 sm:px-4">
+            <div className="w-full max-w-[260px] xs:max-w-[280px] sm:max-w-xs md:max-w-sm flex justify-center items-center mx-auto">
               <RotatingText
                 texts={['Web Developer', 'Python Developer', 'React Developer']}
-                mainClassName="px-2 py-1 md:px-3 md:py-2 bg-transparent border border-white text-white overflow-hidden flex justify-center rounded-lg text-lg md:text-2xl font-medium tracking-wide"
+                mainClassName="px-2 py-1 md:px-3 md:py-2 bg-transparent border border-white text-white overflow-hidden flex justify-center rounded-lg text-base xs:text-lg md:text-2xl font-medium tracking-wide"
                 staggerFrom="last"
                 initial={{ y: '100%' }}
                 animate={{ y: 0 }}
@@ -41,8 +41,8 @@ const Hero = () => {
           {/* Tech Stack Badges */}
           <div className="flex flex-wrap justify-center gap-2 sm:gap-3 mb-10 w-full px-2 sm:px-4">
             {tags.map((tech) => (
-              <div 
-                key={tech} 
+              <div
+                key={tech}
                 className="flex items-center gap-2 px-3 py-1 sm:px-4 sm:py-1.5 rounded-full bg-white/5 border border-white/10 text-[10px] sm:text-sm text-white transition-all hover:border-cyan-500/50"
               >
                 <span className="w-1.5 h-1.5 rounded-full bg-cyan-400" />
@@ -53,17 +53,17 @@ const Hero = () => {
 
           {/* Buttons */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12 w-full max-w-md sm:max-w-none px-6">
-            <a 
-              href="#project" 
+            <a
+              href="#project"
               className="w-full sm:w-auto flex items-center justify-center gap-2 bg-white/5 border border-white/10 text-white px-8 py-4 rounded-xl font-semibold transition-all duration-300 hover:scale-105 hover:border-purple-500/50 hover:shadow-[0_0_20px_rgba(168,85,247,0.3)] group relative overflow-hidden"
             >
               <div className="absolute inset-0 bg-gradient-to-r from-purple-600/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
               <span className="relative z-10 text-xs sm:text-sm tracking-wider">PROJECTS</span>
               <ArrowRight size={18} className="relative z-10 transition-transform group-hover:translate-x-1 text-purple-400" />
             </a>
-            
-            <a 
-              href="#contact" 
+
+            <a
+              href="#contact"
               className="w-full sm:w-auto flex items-center justify-center gap-2 bg-white/5 border border-white/10 text-white px-8 py-4 rounded-xl font-semibold transition-all duration-300 hover:scale-105 hover:border-purple-500/50 hover:shadow-[0_0_20px_rgba(168,85,247,0.3)] group relative overflow-hidden"
             >
               <div className="absolute inset-0 bg-gradient-to-r from-purple-600/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
