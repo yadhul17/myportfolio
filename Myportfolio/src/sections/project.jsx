@@ -30,6 +30,16 @@ const Project = () => {
       tags: ["django", "python", "pythonanywhere", "tailwind"],
       xInitial: 50, // Come from right
       yInitial: 0
+    },
+     {
+      title: " fund wave  ",
+      description:"A secure, full-stack crowdfunding platform featuring Google OAuth for seamless user authentication and integrated SMTP services for automated donation receipts and campaign updates. Built with Django, the application ensures strict data isolation, allowing creators to securely manage sensitive campaign documents and media vaults accessible only to authorized owners. The platform demonstrates expertise in robust backend logic, complex media storage handling, and seamless third-party integrations tailored for secure fundraising.",
+      image: drive,
+      tags: ["django", "python", "pythonanywhere", "tailwind"],
+      link: "https://yadhul.pythonanywhere.com",
+      github: "https://github.com/yadhul17/CFS",
+      xInitial: 50, // Come from right
+      yInitial: 0
     }
   ];
 
