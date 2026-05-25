@@ -20,7 +20,9 @@ const Project = () => {
       title: "Aura Perfumes – Premium Store",
       image: project,
       description: "A full-stack e-commerce web application designed to provide a seamless shopping experience for luxury fragrances.",
-      tags: ["Python", "Django", "SQLite", "AWS", "Git"],
+      tags: ["Python", "Django", "SQLite", "render", "Git"],
+      link: "https://ecommerce-k4mk.onrender.com/",
+      github: "https://github.com/yadhul17/ecommerce",
       xInitial: 0,
       yInitial: 50
     },
@@ -39,6 +41,15 @@ const Project = () => {
       tags: ["Django", "Python", "PythonAnywhere", "Tailwind"],
       link: "https://yadhul.pythonanywhere.com",
       github: "https://github.com/yadhul17/CFS",
+      xInitial: 50, 
+      yInitial: 0
+    },
+    {
+      title: "chatboat",
+      description: "An AI chatbot built with Ollama for local, privacy-first language model inference. Runs entirely offline, eliminating API costs and latency while keeping conversations completely private. Built with [DJANGO/Python/OLLAMA etc.] and integrates Ollama's REST API to serve real-time, context-aware responses",
+      image: fund,
+      tags: ["Django", "Python", "Tailwind","ollama"],
+      github: "https://github.com/yadhul17/chatboat",
       xInitial: 50, 
       yInitial: 0
     }
