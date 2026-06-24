@@ -5,6 +5,7 @@ import project from '../assets/aura.png';
 import drive from '../assets/mydrive.png';
 import ticket from '../assets/ticket.jpg';
 import fund  from '../assets/fund.png';
+import chatbot from '../assets/chatbot.jpg';
 
 const Project = () => {
   const projects = [
@@ -47,7 +48,7 @@ const Project = () => {
     {
       title: "chatboat",
       description: "An AI chatbot built with Ollama for local, privacy-first language model inference. Runs entirely offline, eliminating API costs and latency while keeping conversations completely private. Built with [DJANGO/Python/OLLAMA etc.] and integrates Ollama's REST API to serve real-time, context-aware responses",
-      image: fund,
+      image: chatbot,
       tags: ["Django", "Python", "Tailwind","ollama"],
       github: "https://github.com/yadhul17/chatboat",
       xInitial: 50, 
